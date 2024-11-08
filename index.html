@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <div class="caixa-conteudo">
+        <img src="unlock.svg" alt="imagem-cadeado">
+        <h1 class="titulo-principal">Gerador de senhas</h1>
+        <h2 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h2>
+    </div>
+    <div class="conteinerSenha">
+        <label for="senha">Senha</label>
+        <input type="text" id="campoSenha" readonly>
+    </div>
+
+    
+    <div class="conteinerPainel">
+        <h2>Personalize sua senha</h2>
+
+        <div class="caixa-painel">
+            
+            <div>
+                <h3>Número de caracteres</h3>
+                <div class="botoesPainel">
+                    <button class="botoes">-</button>
+                    <p class="numeroSenha">12</p>
+                    <button class="botoes">+</button>
+                </div>                
+            </div>
+
+        
+            <div>
+                <h3>Características da senha</h3>   
+                <div class="inputPainel">
+                    <div>
+                        <input type="checkbox" id="letrasMaiusculas" class="checkbox" checked><label for="letrasMaiusculas">Letras Maiusculas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="letrasMinusculas" class="checkbox"><label for="letrasMinusculas">Letras Minusculas</label>     
+                    </div>
+                    <div>
+                        <input type="checkbox" id="numeros" class="checkbox"><label for="numeros">Números</label>        
+
+                    </div>
+                    <div>
+                        <input type="checkbox" id="simbolos" class="checkbox"><label for="simbolos">Símbolos</label>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div>
+                <h3>Força da Senha</h3>
+                <div class="barra"></div>
+                <div class="forca fraco"></div>
+                <div class="textoForca">
+                    <p>Fraco</p>
+                    <p>Média</p>
+                    <p>Forte</p>
+                </div>          
+            </div>
+        </div>
+      
+    </div>  
+    
+<script src="script.js"></script>
+</body>
+</html>
